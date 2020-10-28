@@ -18,14 +18,79 @@ body {
 
 .btn,
 .btn:hover {
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-decoration: none;
   padding: .5rem 5rem;
+  margin: 1rem auto;
+  font-size: 3rem;
+  border-radius: 5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-animation: glow 2s infinite;
+          animation: glow 2s infinite;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.neon {
+  background-color: #4e4e4a;
+  color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.btn:hover {
+  -webkit-transform: translateX(-20) rotate(30deg);
+          transform: translateX(-20) rotate(30deg);
+  border-radius: 5rem;
+  background-color: #fff;
+  color: #4e4e4a;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@-webkit-keyframes glow {
+  0% {
+    -webkit-box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
+            box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
+  }
+  50% {
+    -webkit-box-shadow: 2rem 2rem 5rem #51e0d2, -2rem -2rem 5rem #51e0d2;
+            box-shadow: 2rem 2rem 5rem #51e0d2, -2rem -2rem 5rem #51e0d2;
+  }
+  75% {
+    -webkit-box-shadow: 2rem 2rem 5rem #e184d4, -2rem -2rem 5rem #e184d4;
+            box-shadow: 2rem 2rem 5rem #e184d4, -2rem -2rem 5rem #e184d4;
+  }
+  100% {
+    -webkit-box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
+            box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
+  }
+}
+
+@keyframes glow {
+  0% {
+    -webkit-box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
+            box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
+  }
+  50% {
+    -webkit-box-shadow: 2rem 2rem 5rem #51e0d2, -2rem -2rem 5rem #51e0d2;
+            box-shadow: 2rem 2rem 5rem #51e0d2, -2rem -2rem 5rem #51e0d2;
+  }
+  75% {
+    -webkit-box-shadow: 2rem 2rem 5rem #e184d4, -2rem -2rem 5rem #e184d4;
+            box-shadow: 2rem 2rem 5rem #e184d4, -2rem -2rem 5rem #e184d4;
+  }
+  100% {
+    -webkit-box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
+            box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
+  }
 }
 
 html,
 body {
-  background-color: gray;
+  background-color: darkgray;
 }
 
 .container {
@@ -38,6 +103,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 1rem;

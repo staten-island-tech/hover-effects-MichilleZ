@@ -1,9 +1,9 @@
 @import "_variables.scss";
-@import "Hover/_neonbtn.scss";
+@import "hover/_neonbtn.scss";
 
-html, 
+html,
 body {
-    background-color: gray;
+    background-color: darkgray;
 }
 
 .container{
@@ -11,6 +11,7 @@ body {
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
+    display: flex;
     justify-content: space-around;
     padding: 1rem;
     font-size: 1.5rem;

@@ -6,14 +6,16 @@ body {
     box-sizing: border-box;
 
 }
-
-$colors: (
-    red: #ff5722,
-    white: #fff,
-    blue: blue,
-    black: #000
+$color: (
+    red:     #ff5722,
+    whites:  #fff,
+    greens: rgb(0, 255, 0),
+    blues:   rgb(81, 224, 210),
+    purples: rgb(93, 52, 168),
+    pinks:    rgb(225, 132, 212), 
+    black:   #000,
 );
 
 @function color($color-name) {
-    @return map-get($colors, $color-name);
+    @return map-get($color, $color-name);
 }
