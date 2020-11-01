@@ -16,20 +16,12 @@ body {
           box-sizing: border-box;
 }
 
-.btn,
-.btn:hover {
+.btn {
   text-transform: uppercase;
   text-decoration: none;
   padding: .5rem 5rem;
   margin: 1rem auto;
   font-size: 3rem;
-  border-radius: 5rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-animation: glow 2s infinite;
-          animation: glow 2s infinite;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .neon {
@@ -38,11 +30,17 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   opacity: 1;
+  border-radius: 5rem;
+  transition: 0.3s;
+  -webkit-animation: glow 2s infinite;
+          animation: glow 2s infinite;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-.btn:hover {
-  -webkit-transform: translateX(-20) rotate(30deg);
-          transform: translateX(-20) rotate(30deg);
+.neon:hover {
+  -webkit-transform: rotate(-30deg) translateX(20px);
+          transform: rotate(-30deg) translateX(20px);
   border-radius: 5rem;
   background-color: #fff;
   color: #4e4e4a;
@@ -86,6 +84,55 @@ body {
     -webkit-box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
             box-shadow: 2rem 2rem 5rem #5d34a8, -2rem -2rem 5rem #5d34a8;
   }
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  margin: 5rem;
+  width: 50vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 5rem;
+}
+
+.card:hover {
+  height: 30vh;
+}
+
+.card p {
+  position: relative;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  color: #000;
+  visibility: hidden;
+}
+
+.card h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.card:hover p {
+  position: relative;
+  visibility: visible;
 }
 
 html,

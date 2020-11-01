@@ -1,16 +1,12 @@
 @import "../_variables.scss";
 
-.btn, 
-.btn:hover {
+.btn {
     text-transform: uppercase;
     text-decoration: none;
     padding: .5rem 5rem;
     margin: 1rem auto;
     font-size: 3rem;
-    border-radius: 5rem;
-    transition: 0.3s;
-    animation: glow 2s infinite;
-    transition: 0.5s;
+
 }
 
 .neon {
@@ -18,16 +14,21 @@
     color: color(whites);
     transition: 0.3s;
     opacity: 1;
+    border-radius: 5rem;
+    transition: 0.3s;
+    animation: glow 2s infinite;
+    transition: 0.5s;
     
 }
 
-.btn:hover{
-    transform: translateX(-20)rotate(30deg);
+.neon:hover{
+    transform: rotate(-30deg) translateX(20px);
     border-radius: 5rem;
     background-color: color(whites);
     color: rgb(78, 78, 74) ;
     transition: 0.5s;
 }
+
 
 @keyframes glow{
     0%{

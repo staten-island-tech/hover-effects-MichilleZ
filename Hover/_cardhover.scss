@@ -1,0 +1,42 @@
+@import "../variables";
+
+.card{ 
+    position: relative;
+    margin: 5rem;
+    width: 50vw;
+    height: 10vh;
+    display: flex;
+    background-color: color(whites);
+    transition: 0.3s ease-in-out;
+    align-items: center;
+    text-align: center;
+    border-radius: 5rem;
+}
+
+
+.card:hover{
+    height: 30vh;
+}
+
+.card p{
+    position: relative;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    color: color(black);
+    visibility: hidden;
+
+}
+
+.card h1{ 
+    text-align: center;
+    padding: 1rem;
+
+}
+
+.card:hover p{
+    position: relative;
+    visibility: visible;
+}
+
+
+
