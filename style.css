@@ -111,10 +111,16 @@ body {
           align-items: center;
   text-align: center;
   border-radius: 5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card:hover {
   height: 30vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e184d4));
+  background: linear-gradient(#fff, #e184d4);
 }
 
 .card p {
@@ -127,11 +133,76 @@ body {
 
 .card h1 {
   text-align: center;
-  padding: 1rem;
+  padding: .5rem .5rem;
 }
 
 .card:hover p {
   position: relative;
+  visibility: visible;
+}
+
+html,
+body {
+  font-size: 62.5%;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card2 {
+  position: relative;
+  width: 20vw;
+  height: 30vh;
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  border-radius: 10rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#51e0d2), to(#5d34a8));
+  background: linear-gradient(#51e0d2, #5d34a8);
+}
+
+.card2:hover {
+  border-radius: 1rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card2 img {
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: 0;
+  height: 30vh;
+  left: 15%;
+  -webkit-transform: translateX(50);
+          transform: translateX(50);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card2:hover img {
+  left: 80%;
+  height: 50vh;
+}
+
+.card2 p {
+  visibility: hidden;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.card2:hover p {
   visibility: visible;
 }
 

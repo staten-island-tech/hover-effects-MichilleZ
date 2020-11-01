@@ -1,0 +1,47 @@
+@import "../_variables.scss";
+
+.card2 {
+    position: relative;
+    width: 20vw;
+    height: 30vh;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10rem;
+    background: linear-gradient(color(blues),color(purples));
+
+}
+.card2:hover{
+    border-radius: 1rem;
+    transition: 1s;
+
+}
+
+.card2 img {
+    position: absolute;
+    align-items: center;
+    bottom: 0;
+    height: 30vh;
+    left: 15%;
+    transform: translateX(50);
+    transition: 1s;
+
+}
+
+.card2:hover img {
+    left: 80%;
+    height:50vh ;
+
+}
+
+.card2  p{
+    visibility: hidden;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+.card2:hover p{
+    visibility: visible;
+}
