@@ -1,0 +1,38 @@
+@import "../variables";
+
+.block {
+    text-decoration: none;
+    color: color(blues);
+    border-radius: 2rem;
+    border: solid color(blues);
+    font-size: 3rem;
+    text-align: center;
+    padding: 10rem 5rem;
+    position: relative;
+    transition: all 1s;
+    margin-top: 5rem;
+    overflow: hidden;
+
+}
+
+.block:before{
+    content: "";
+    right: 0;
+    top: 0;
+    position: absolute;
+    background-color: color(blues);
+    height: 100%;
+    width: 100%;
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+    transition: 1s;
+    border-radius: 2rem;
+}
+
+.block:hover:before{
+    transform: rotate(0deg);
+}
+
+.block:hover {
+    color: color(grey);
+}

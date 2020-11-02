@@ -11,6 +11,7 @@
     text-align: center;
     border-radius: 10rem;
     background: linear-gradient(color(blues),color(purples));
+    font-size: 1.5rem;
 
 }
 .card2:hover{
@@ -24,7 +25,7 @@
     align-items: center;
     bottom: 0;
     height: 30vh;
-    left: 15%;
+    left: 20%;
     transform: translateX(50);
     transition: 1s;
 
@@ -39,7 +40,7 @@
 .card2  p{
     visibility: hidden;
     text-align: center;
-    padding-top: 5rem;
+    padding-top: 2rem;
 }
 
 .card2:hover p{
