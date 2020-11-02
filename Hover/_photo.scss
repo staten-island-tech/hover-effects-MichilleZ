@@ -1,0 +1,44 @@
+@import "../variables";
+
+.photo {
+    width: 20vw;
+    height: 30vh;
+    position: relative;
+    overflow: hidden;
+    color: color(whites);
+    margin-top: 5rem;
+    border-radius: 2rem ;
+
+}
+
+.photo img{
+    width: 100%;
+    transition: all .5s;
+}
+
+.h3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all .5s;
+    background-color: color(black);
+    transform: translateY(100%);
+
+}
+.photo:hover h3{
+    transform: translateY(0);
+    border-radius: 2rem;
+}
+.photo:hover img{
+    transform: translateY(-30%);
+
+}
+
+
